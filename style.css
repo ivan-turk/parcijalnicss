@@ -1,3 +1,61 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 
+[class] {
+  display: flex;
+  position: relative;
+  padding: 6%;
+  right: -150vh;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  font-size: 90px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div:nth-child(1) {
+  background-color: rgba(128, 128, 128, 0.4);
+  box-shadow: 5px 10px 5px gray;
+  border-radius: 20px;
+  animation: ulazDesno 1.5s ease-in 1.5s forwards;
+}
+
+div:nth-child(2) {
+  background-color: rgba(255, 0, 0, 0.4);
+  box-shadow: 5px 10px 18px red;
+  border-radius: 20px;
+  animation: ulazDesno 1.5s ease-in 3s forwards;
+}
+
+div:nth-child(3) {
+  background-color: rgba(255, 255, 0, 0.4);
+  box-shadow: 5px 10px 18px yellow;
+  border-radius: 20px;
+  animation: ulazDesno 1.5s ease-in 4.5s forwards;
+}
+
+@keyframes ulazDesno {
+  100% {
+    right: 0px;
+  }
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("https://v1.padlet.pics/1/image.webp?t=c_limit%2Cdpr_1%2Ch_859%2Cw_1528&url=https%3A%2F%2Fpadlet-uploads.storage.googleapis.com%2F891001168%2Fe79960e75be653e107a57de088ea3859%2Fblur_clean.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=style.css.map */

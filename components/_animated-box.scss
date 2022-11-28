@@ -1,0 +1,13 @@
+[class] {
+  @include itemsEdit();
+}
+
+div:nth-child(1) {
+  @include item1;
+}
+div:nth-child(2) {
+  @include item2;
+}
+div:nth-child(3) {
+  @include item3;
+}

@@ -1,0 +1,37 @@
+@mixin itemsEdit() {
+  display: flex;
+  position: relative;
+  padding: 6%;
+  right: -150vh;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  font-size: 90px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@mixin item1 {
+  background-color: rgba(map-get($colors, 1), 0.4);
+  box-shadow: 5px 10px 5px (map-get($colors, 1));
+  border-radius: 20px;
+  @include animate(1.5);
+}
+@mixin item2 {
+  background-color: rgba(map-get($colors, 2), 0.4);
+  box-shadow: 5px 10px 18px (map-get($colors, 2));
+  border-radius: 20px;
+  @include animate(3);
+}
+@mixin item3 {
+  background-color: rgba(map-get($colors, 3), 0.4);
+  box-shadow: 5px 10px 18px (map-get($colors, 3));
+  border-radius: 20px;
+  @include animate(4.5);
+}
+
+@mixin animate($delay) {
+  animation: ulazDesno $animationSpeed ease-in #{$delay}s forwards;
+}
